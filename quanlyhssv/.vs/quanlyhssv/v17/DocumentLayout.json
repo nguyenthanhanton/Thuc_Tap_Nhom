@@ -1,0 +1,103 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\ton\\hoc\\hk1-nam4\\Thuc_tap_nhom\\quanlyhssv\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4CFC0F95-A0C4-4C47-881C-47FC911C60F6}|quanlyhssv.csproj|d:\\ton\\hoc\\hk1-nam4\\thuc_tap_nhom\\quanlyhssv\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4CFC0F95-A0C4-4C47-881C-47FC911C60F6}|quanlyhssv.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CFC0F95-A0C4-4C47-881C-47FC911C60F6}|quanlyhssv.csproj|d:\\ton\\hoc\\hk1-nam4\\thuc_tap_nhom\\quanlyhssv\\views\\monhoc\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4CFC0F95-A0C4-4C47-881C-47FC911C60F6}|quanlyhssv.csproj|solutionrelative:views\\monhoc\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CFC0F95-A0C4-4C47-881C-47FC911C60F6}|quanlyhssv.csproj|d:\\ton\\hoc\\hk1-nam4\\thuc_tap_nhom\\quanlyhssv\\views\\monhoc\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4CFC0F95-A0C4-4C47-881C-47FC911C60F6}|quanlyhssv.csproj|solutionrelative:views\\monhoc\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CFC0F95-A0C4-4C47-881C-47FC911C60F6}|quanlyhssv.csproj|d:\\ton\\hoc\\hk1-nam4\\thuc_tap_nhom\\quanlyhssv\\views\\giaovien\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4CFC0F95-A0C4-4C47-881C-47FC911C60F6}|quanlyhssv.csproj|solutionrelative:views\\giaovien\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\ton\\hoc\\hk1-nam4\\Thuc_tap_nhom\\quanlyhssv\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\ton\\hoc\\hk1-nam4\\Thuc_tap_nhom\\quanlyhssv\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-16T01:57:17.223Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\ton\\hoc\\hk1-nam4\\Thuc_tap_nhom\\quanlyhssv\\Views\\Monhoc\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Monhoc\\Index.cshtml",
+              "ToolTip": "D:\\ton\\hoc\\hk1-nam4\\Thuc_tap_nhom\\quanlyhssv\\Views\\Monhoc\\Index.cshtml",
+              "RelativeToolTip": "Views\\Monhoc\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEIAAABkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-16T01:54:57.365Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\ton\\hoc\\hk1-nam4\\Thuc_tap_nhom\\quanlyhssv\\Views\\Monhoc\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Views\\Monhoc\\Edit.cshtml",
+              "ToolTip": "D:\\ton\\hoc\\hk1-nam4\\Thuc_tap_nhom\\quanlyhssv\\Views\\Monhoc\\Edit.cshtml",
+              "RelativeToolTip": "Views\\Monhoc\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-16T01:36:56.54Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\ton\\hoc\\hk1-nam4\\Thuc_tap_nhom\\quanlyhssv\\Views\\Giaovien\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Views\\Giaovien\\Edit.cshtml",
+              "ToolTip": "D:\\ton\\hoc\\hk1-nam4\\Thuc_tap_nhom\\quanlyhssv\\Views\\Giaovien\\Edit.cshtml",
+              "RelativeToolTip": "Views\\Giaovien\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-16T01:36:55.068Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 136,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
