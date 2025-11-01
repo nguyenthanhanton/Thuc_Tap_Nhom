@@ -1,0 +1,60 @@
+﻿@model quanlyhssv.Models.Taikhoan
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<div class="row">
+    <div class="col-xl-12 grid-margin stretch-card justify-content-between  ">
+        <h5 class="mb-2 text-titlecase mb-4">Sữa tài khoản</h5>
+
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Matk" class="control-label">Mã Tài khoản</label>
+                <input asp-for="Matk" class="form-control" readonly />
+                <span asp-validation-for="Matk" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Tendangnhap" class="control-label">Tên đăng nhập</label>
+                <input asp-for="Tendangnhap" class="form-control" readonly />
+                <span asp-validation-for="Tendangnhap" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Matkhau" class="control-label"> Mật khẩu</label>
+                <input asp-for="Matkhau" class="form-control" />
+                <span asp-validation-for="Matkhau" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Quyenhan" class="control-label"> Quyền hạn</label>
+                <select asp-for="Quyenhan" class="form-control">
+                 
+                    <option value="Admin">Admin</option>
+                    <option value="Quản lý">Quản lý</option>
+                    <option value="Giáo viên">Giáo viên</option>
+                </select>
+                <span asp-validation-for="Quyenhan" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Hoten" class="control-label">Họ tên</label>
+                <input asp-for="Hoten" class="form-control" />
+                <span asp-validation-for="Hoten" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Sữa" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Trở lại</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
