@@ -1,0 +1,57 @@
+﻿@model quanlyhssv.Models.Namhoc
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+@* --- Khu vực hiển thị thông báo lỗi/thành công --- *@
+@if (TempData["Error"] != null)
+{
+    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+        <strong>Lỗi!</strong> @TempData["Error"]
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+}
+@if (TempData["Success"] != null)
+{
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+        @TempData["Success"]
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+}
+
+<div class="row">
+    <div class="col-xl-12 grid-margin stretch-card justify-content-between">
+        <h5 class="mb-2 text-titlecase mb-4">Sửa Năm học</h5>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            @* Cần input hidden cho các trường không hiển thị nhưng Model cần (nếu có) *@
+            <div class="form-group">
+                <label asp-for="Manh" class="control-label">Mã năm học</label>
+                <input asp-for="Manh" readonly class="form-control" style="background-color: #eee;" />
+                <span asp-validation-for="Manh" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Ten" class="control-label">Tên năm học</label>
+                <input asp-for="Ten" class="form-control" placeholder="Ví dụ: 2025-2026" />
+                <span asp-validation-for="Ten" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary mr-2">Cập nhật</button>
+                <a asp-action="Index" asp-controller="Home" class="btn btn-light">Hủy</a>
+            </div>
+        </form>
+    </div>
+</div>
