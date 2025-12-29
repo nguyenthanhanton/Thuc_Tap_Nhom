@@ -1,0 +1,74 @@
+﻿@model quanlyhssv.Models.Lop
+@inject quanlyhssv.Models.QuanlyhocsinhThptContext _context
+@{
+    ViewData["Title"] = "Create";
+    var m = _context.Namhocs.Where(X => X.Manh == Model.Manh).FirstOrDefault();
+
+
+}
+
+
+<div class="row">
+    <div class="col-xl-12 grid-margin stretch-card justify-content-between  ">
+        <h5 class="mb-2 text-titlecase mb-4">Thêm lớp học</h5>
+
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Malop" class="control-label">Mã lớp</label>
+                <input asp-for="Malop" readonly class="form-control" />
+                <span asp-validation-for="Malop" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Manh" class="control-label">Năm học</label>
+                <input asp-for="Manh" class="form-control" hidden />
+                <input class="form-control" value="@m.Ten" readonly />
+                <span asp-validation-for="Manh" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Tenlop" class="control-label">Tên lớp</label>
+                <input asp-for="Tenlop" class="form-control" />
+                <span asp-validation-for="Tenlop" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Khoi" class="control-label">Khối</label>
+                <select asp-for="Khoi" class="form-control">
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </select>
+                <span asp-validation-for="Khoi" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Magv" class="control-label">Giáo viên phụ trách</label>
+                <select asp-for="Magv" class="form-control">
+                    <option value="không">không</option>
+                    @foreach (var m in _context.Giaoviens.ToList())
+                    {
+                        <option value="@m.Magv">@m.Hotengv</option>
+                    }
+                </select>
+                <span asp-validation-for="Magv" class="text-danger"></span>
+            </div>
+
+
+            <div class="form-group">
+                <input type="submit" value="Tạo" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Trở về</a>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

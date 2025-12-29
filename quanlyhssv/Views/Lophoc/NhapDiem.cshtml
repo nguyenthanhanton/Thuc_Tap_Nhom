@@ -1,0 +1,195 @@
+﻿@using quanlyhssv.Models.ViewsModel
+@model quanlyhssv.Models.ViewsModel.NhapDiemViewModel
+
+@{
+    ViewData["Title"] = "Nhập điểm chi tiết";
+}
+
+<div class="content-wrapper">
+    @* Thông báo lỗi/thành công *@
+    @if (TempData["Success"] != null)
+    {
+        <div class="alert alert-success alert-dismissible fade show">
+            <button type="button" class="close" data-dismiss="alert">&times;</button>
+            @TempData["Success"]
+        </div>
+    }
+    @if (TempData["Error"] != null)
+    {
+        <div class="alert alert-danger alert-dismissible fade show">
+            <button type="button" class="close" data-dismiss="alert">&times;</button>
+            @TempData["Error"]
+        </div>
+    }
+
+    <div class="card shadow-sm">
+        <div class="card-header bg-gradient-primary text-white d-flex justify-content-between align-items-center">
+            <div>
+                <h4 class="mb-0 font-weight-bold">@Model.Tenmon</h4>
+                <small>Lớp: @Model.Tenlop | Học kỳ: @Model.Mahk</small>
+            </div>
+            <a asp-action="Details" asp-route-id="@Model.Malop" class="btn btn-light btn-sm text-primary font-weight-bold">
+                <i class="fa fa-arrow-left"></i> Quay lại lớp
+            </a>
+        </div>
+
+        <div class="card-body">
+            <form asp-action="LuuDiem" method="post">
+                @* INPUT HIDDEN: Giữ thông tin ngữ cảnh *@
+                <input type="hidden" asp-for="Malop" />
+                <input type="hidden" asp-for="Mamon" />
+                <input type="hidden" asp-for="Mahk" />
+
+                <div class="table-responsive">
+                    <table class="table table-bordered table-striped table-hover">
+                        <thead class="bg-light text-center text-nowrap">
+                            <tr>
+                                <th style="width: 50px">STT</th>
+                                <th style="min-width: 200px">Học sinh</th>
+                                <th>Miệng <br><span class="badge badge-secondary">x0.1</span></th>
+                                <th>15 Phút <br><span class="badge badge-secondary">x0.1</span></th>
+                                <th>Thực hành <br><span class="badge badge-secondary">x0.1</span></th>
+                                <th>Hệ số 2 <br><span class="badge badge-info">x0.3</span></th>
+                                <th>Hệ số 3 <br><span class="badge badge-warning">x0.4</span></th>
+                                <th class="table-primary font-weight-bold">ĐTB Môn</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @if (Model.DanhSachDiem.Any())
+                            {
+                                for (int i = 0; i < Model.DanhSachDiem.Count; i++)
+                                {
+                                    <tr>
+                                        <td class="text-center align-middle">@(i + 1)</td>
+                                        <td class="align-middle">
+                                            <span class="font-weight-bold">@Model.DanhSachDiem[i].Hoten</span>
+                                            <br />
+                                            <small class="text-muted">ID: @Model.DanhSachDiem[i].Mahs</small>
+
+                                            @* INPUT HIDDEN: Cực kỳ quan trọng để binding *@
+                                            <input type="hidden" asp-for="DanhSachDiem[i].Mahs" />
+                                            <input type="hidden" asp-for="DanhSachDiem[i].Hoten" />
+                                        </td>
+
+                                        <td>
+                                            <input asp-for="DanhSachDiem[i].Diemmieng" type="number" step="0.1" min="0" max="10"
+                                                   class="form-control text-center inp-score inp-mieng" placeholder="" />
+                                        </td>
+                                        <td>
+                                            <input asp-for="DanhSachDiem[i].Diem15p" type="number" step="0.1" min="0" max="10"
+                                                   class="form-control text-center inp-score inp-15p" placeholder="" />
+                                        </td>
+                                        <td>
+                                            <input asp-for="DanhSachDiem[i].DiemTh" type="number" step="0.1" min="0" max="10"
+                                                   class="form-control text-center inp-score inp-th" placeholder="" />
+                                        </td>
+                                        <td>
+                                            <input asp-for="DanhSachDiem[i].Diemhs2" type="number" step="0.1" min="0" max="10"
+                                                   class="form-control text-center inp-score inp-hs2" placeholder="" />
+                                        </td>
+                                        <td>
+                                            <input asp-for="DanhSachDiem[i].Diemhs3" type="number" step="0.1" min="0" max="10"
+                                                   class="form-control text-center inp-score inp-hs3" placeholder="" />
+                                        </td>
+
+                                        <td class="text-center align-middle table-primary">
+                                            <span class="font-weight-bold text-primary lbl-dtb" style="font-size: 1.1em;">
+                                                @(Model.DanhSachDiem[i].Diemtbmon.HasValue ? Model.DanhSachDiem[i].Diemtbmon.ToString() : "-")
+                                            </span>
+                                        </td>
+                                    </tr>
+                                }
+                            }
+                            else
+                            {
+                                <tr>
+                                    <td colspan="8" class="text-center">Không tìm thấy học sinh nào trong lớp này.</td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="card-footer bg-white text-right">
+                   
+                    <button type="submit" class="btn btn-success btn-lg px-5">
+                        <i class="fa fa-save"></i> LƯU BẢNG ĐIỂM
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@* --- CSS Tùy chỉnh --- *@
+<style>
+    .bg-gradient-primary {
+        background: linear-gradient(45deg, #4099ff, #73b4ff);
+    }
+    /* Ẩn mũi tên input number */
+    input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+    input[type=number] {
+        -moz-appearance: textfield;
+    }
+
+    .inp-score {
+        font-weight: 500;
+        transition: all 0.2s;
+    }
+
+        .inp-score:focus {
+            transform: scale(1.05);
+            box-shadow: 0 0 5px rgba(0,123,255,0.5);
+        }
+
+        .inp-score::placeholder {
+            color: #ccc;
+        }
+</style>
+
+@* --- JAVASCRIPT TÍNH ĐIỂM TỰ ĐỘNG --- *@
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const inputs = document.querySelectorAll('.inp-score');
+
+        // Hàm lấy giá trị an toàn (null/rỗng -> 0)
+        const getVal = (row, selector) => {
+            let el = row.querySelector(selector);
+            let val = parseFloat(el.value);
+            return isNaN(val) ? 0 : val;
+        };
+
+        // Hàm tính toán cho 1 dòng
+        const calculateRow = (row) => {
+            let mieng = getVal(row, '.inp-mieng');
+            let p15   = getVal(row, '.inp-15p');
+            let th    = getVal(row, '.inp-th');
+            let hs2   = getVal(row, '.inp-hs2');
+            let hs3   = getVal(row, '.inp-hs3');
+
+            // Tính toán
+            let dtb = (mieng * 0.1) + (p15 * 0.1) + (th * 0.1) + (hs2 * 0.3) + (hs3 * 0.4);
+
+            // Làm tròn 2 số lẻ
+            dtb = Math.round(dtb * 100) / 100;
+
+            // Hiển thị
+            let lbl = row.querySelector('.lbl-dtb');
+            lbl.innerText = dtb;
+        };
+
+        // Gắn sự kiện cho tất cả ô nhập liệu
+        inputs.forEach(input => {
+            input.addEventListener('input', function() {
+                calculateRow(this.closest('tr'));
+            });
+
+            // Tính toán ngay lần đầu load trang (để hiện điểm cũ nếu có)
+            // calculateRow(input.closest('tr')); // Có thể bật dòng này nếu muốn tính lại client-side khi load
+        });
+    });
+</script>

@@ -1,0 +1,92 @@
+﻿@model quanlyhssv.Models.Giangday
+
+@{
+    var lop = ViewBag.Lop as quanlyhssv.Models.Lop;
+    ViewData["Title"] = "Thêm môn học vào lớp";
+}
+
+<div class="content-wrapper">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">Thêm môn học cho lớp @lop.Tenlop</h4>
+            <form asp-action="AssignSubject" method="post">
+                <input type="hidden" name="malop" value="@lop.Malop" />
+
+                <div class="form-group">
+                    <label>Chọn môn học</label>
+                    <select id="mamon" name="mamon" class="form-control" required>
+                      
+                        @foreach (var m in ViewBag.MonHoc)
+                        {
+                            <option value="@m.Mamon">@m.Tenmon</option>
+                        }
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Giáo viên bộ môn</label>
+                    <select id="magv" name="magv" class="form-control" required disabled>
+                        <option value="">-- Vui lòng chọn môn học trước --</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Học kỳ áp dụng điểm</label>
+                    <select name="mahocky" class="form-control" required>
+                        @foreach (var hk in ViewBag.HocKy)
+                        {
+                            <option value="@hk.Mahk">@hk.Ten</option>
+                        }
+                    </select>
+                </div>
+
+                <button type="submit" class="btn btn-primary mr-2">Xác nhận thêm</button>
+                <a asp-action="Details" asp-route-id="@lop.Malop" class="btn btn-light">Hủy</a>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#mamon').on('change', function () {
+                var selectedMamon = $(this).val();
+                var $magvSelect = $('#magv');
+
+                // Reset dropdown giáo viên
+                $magvSelect.empty();
+                $magvSelect.append('<option value="">-- Đang tải dữ liệu... --</option>');
+                $magvSelect.prop('disabled', true);
+
+                if (selectedMamon) {
+                    $.ajax({
+                        url: '@Url.Action("GetGiaoVienByMonHoc", "LopHoc")', // "Lops" là tên Controller
+                        type: 'GET',
+                        data: { mamon: selectedMamon },
+                        success: function (response) {
+                            $magvSelect.empty();
+                            $magvSelect.prop('disabled', false);
+
+                            if (response.length > 0) {
+                                
+                                $.each(response, function (index, item) {
+                                    $magvSelect.append('<option value="' + item.magv + '">' + item.hotengv + '</option>');
+                                });
+                            } else {
+                                $magvSelect.append('<option value="">Không có giáo viên cho môn này</option>');
+                                $magvSelect.prop('disabled', true);
+                            }
+                        },
+                        error: function () {
+                            alert("Lỗi khi tải danh sách giáo viên!");
+                        }
+                    });
+                } else {
+                    $magvSelect.append('<option value="">-- Vui lòng chọn môn học trước --</option>');
+                }
+            });
+        });
+    </script>
+}
