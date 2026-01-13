@@ -1,0 +1,149 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = quanlyhssv
+build_property.RootNamespace = quanlyhssv
+build_property.ProjectDir = D:\ton\hoc\hk1-nam4\Thuc_tap_nhom\quanlyhssv\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = D:\ton\hoc\hk1-nam4\Thuc_tap_nhom\quanlyhssv
+build_property._RazorSourceGeneratorDebug = 
+build_property.EffectiveAnalysisLevelStyle = 8.0
+build_property.EnableCodeStyleSeverity = 
+
+[D:/ton/hoc/hk1-nam4/Thuc_tap_nhom/quanlyhssv/Views/Giaovien/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2lhb3ZpZW5cQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ton/hoc/hk1-nam4/Thuc_tap_nhom/quanlyhssv/Views/Giaovien/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2lhb3ZpZW5cRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ton/hoc/hk1-nam4/Thuc_tap_nhom/quanlyhssv/Views/Giaovien/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2lhb3ZpZW5cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ton/hoc/hk1-nam4/Thuc_tap_nhom/quanlyhssv/Views/Hocsinh/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9jc2luaFxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ton/hoc/hk1-nam4/Thuc_tap_nhom/quanlyhssv/Views/Hocsinh/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9jc2luaFxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ton/hoc/hk1-nam4/Thuc_tap_nhom/quanlyhssv/Views/Hocsinh/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9jc2luaFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ton/hoc/hk1-nam4/Thuc_tap_nhom/quanlyhssv/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ton/hoc/hk1-nam4/Thuc_tap_nhom/quanlyhssv/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ton/hoc/hk1-nam4/Thuc_tap_nhom/quanlyhssv/Views/Login/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ton/hoc/hk1-nam4/Thuc_tap_nhom/quanlyhssv/Views/Lophoc/AssignSubject.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9waG9jXEFzc2lnblN1YmplY3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ton/hoc/hk1-nam4/Thuc_tap_nhom/quanlyhssv/Views/Lophoc/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9waG9jXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ton/hoc/hk1-nam4/Thuc_tap_nhom/quanlyhssv/Views/Lophoc/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9waG9jXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ton/hoc/hk1-nam4/Thuc_tap_nhom/quanlyhssv/Views/Lophoc/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9waG9jXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ton/hoc/hk1-nam4/Thuc_tap_nhom/quanlyhssv/Views/Lophoc/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9waG9jXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ton/hoc/hk1-nam4/Thuc_tap_nhom/quanlyhssv/Views/Lophoc/NhapDiem.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9waG9jXE5oYXBEaWVtLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ton/hoc/hk1-nam4/Thuc_tap_nhom/quanlyhssv/Views/Lophoc/phutrach.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9waG9jXHBodXRyYWNoLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ton/hoc/hk1-nam4/Thuc_tap_nhom/quanlyhssv/Views/Monhoc/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW9uaG9jXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ton/hoc/hk1-nam4/Thuc_tap_nhom/quanlyhssv/Views/Monhoc/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW9uaG9jXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ton/hoc/hk1-nam4/Thuc_tap_nhom/quanlyhssv/Views/Monhoc/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW9uaG9jXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ton/hoc/hk1-nam4/Thuc_tap_nhom/quanlyhssv/Views/Monhoc/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW9uaG9jXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ton/hoc/hk1-nam4/Thuc_tap_nhom/quanlyhssv/Views/Namhoc/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmFtaG9jXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ton/hoc/hk1-nam4/Thuc_tap_nhom/quanlyhssv/Views/Namhoc/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmFtaG9jXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ton/hoc/hk1-nam4/Thuc_tap_nhom/quanlyhssv/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ton/hoc/hk1-nam4/Thuc_tap_nhom/quanlyhssv/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ton/hoc/hk1-nam4/Thuc_tap_nhom/quanlyhssv/Views/Taikhoan/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFpa2hvYW5cQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ton/hoc/hk1-nam4/Thuc_tap_nhom/quanlyhssv/Views/Taikhoan/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFpa2hvYW5cRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ton/hoc/hk1-nam4/Thuc_tap_nhom/quanlyhssv/Views/Taikhoan/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFpa2hvYW5cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ton/hoc/hk1-nam4/Thuc_tap_nhom/quanlyhssv/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ton/hoc/hk1-nam4/Thuc_tap_nhom/quanlyhssv/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ton/hoc/hk1-nam4/Thuc_tap_nhom/quanlyhssv/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-9okn5jkkyi
